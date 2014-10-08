@@ -120,5 +120,6 @@ public class SudokuGUI {
 	
 	public static void main(String[] args) {
 		SudokuGUI GUI = new SudokuGUI(new SudokuSolver());
+		
 	}
 }
