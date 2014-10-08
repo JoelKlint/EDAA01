@@ -10,7 +10,7 @@ public class ArraySet<E> implements SimpleSet<E> {
 	 * Constructs a new empty set.
 	 */
 	public ArraySet() {
-		set = new ArrayList<>();
+		set = new ArrayList<E>();
 	}
 
 	/**
