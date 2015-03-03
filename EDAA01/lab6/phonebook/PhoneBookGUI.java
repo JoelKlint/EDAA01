@@ -14,10 +14,10 @@ public class PhoneBookGUI extends JFrame {
 		super("PhoneBook");
 		phoneBook = pb;
 		String fileName = JOptionPane
-				.showInputDialog("Vilken sparfil vill du l‰sa in?");
+				.showInputDialog("Vilken sparfil vill du l√§sa in?");
 		try {
 			ObjectInputStream in = new ObjectInputStream(new FileInputStream(
-					fileName));
+					fileName+".txt"));
 			phoneBook = (PhoneBook) in.readObject();
 		} catch (FileNotFoundException e) {
 			// e.printStackTrace();
@@ -25,7 +25,7 @@ public class PhoneBookGUI extends JFrame {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			JOptionPane.showMessageDialog(null, "Sparfilen kunde inte l‰sas.");
+			JOptionPane.showMessageDialog(null, "Sparfilen kunde inte l√§sas.");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

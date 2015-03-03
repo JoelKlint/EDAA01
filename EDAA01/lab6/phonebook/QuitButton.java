@@ -18,11 +18,11 @@ public class QuitButton extends JButton implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		String fileName = JOptionPane
-				.showInputDialog("Vad ska sparfilen döpas till?");
+				.showInputDialog("Vad ska sparfilen dÃ¶pas till?");
 		if (fileName != null) {
 			try {
 				ObjectOutputStream out = new ObjectOutputStream(
-						new FileOutputStream(fileName));
+						new FileOutputStream(fileName+".txt"));
 				out.writeObject(phoneBook);
 			} catch (Exception e1) {
 				e1.printStackTrace();
