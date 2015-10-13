@@ -17,7 +17,7 @@ public class PhoneBookGUI extends JFrame {
 				.showInputDialog("Vilken sparfil vill du läsa in?");
 		try {
 			ObjectInputStream in = new ObjectInputStream(new FileInputStream(
-					fileName+".txt"));
+					fileName));
 			phoneBook = (PhoneBook) in.readObject();
 		} catch (FileNotFoundException e) {
 			// e.printStackTrace();

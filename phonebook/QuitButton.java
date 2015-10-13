@@ -22,7 +22,7 @@ public class QuitButton extends JButton implements ActionListener {
 		if (fileName != null) {
 			try {
 				ObjectOutputStream out = new ObjectOutputStream(
-						new FileOutputStream(fileName+".txt"));
+						new FileOutputStream(fileName));
 				out.writeObject(phoneBook);
 			} catch (Exception e1) {
 				e1.printStackTrace();
